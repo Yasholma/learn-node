@@ -4,10 +4,6 @@ import xmlparser from "express-xml-bodyparser";
 
 const router = express.Router();
 
-router.get("/", (req, res) => {
-  return "<h1>Cybertech</h1>";
-})
-
 // Get All Todos
 router.get("/api/v1/todos", todoController.getAllTodos);
 
